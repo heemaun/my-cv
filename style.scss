@@ -133,8 +133,6 @@ html{
                     grid-template-columns: repeat(3,1fr);
                     gap: 1.5em;
 
-                    // margin-bottom: 1.75em;
-
                     h3{
                         grid-column: 1/-1;
 
@@ -167,7 +165,7 @@ html{
                             inset: -7.5%;
                             z-index: -2;
                             border-radius: 50%;
-                            background-image: conic-gradient(hsl(210, 100%, 100%) 0deg var(--angle,50deg),hsl(193, 23%, 63%) var(--angle,50deg) 360deg);
+                            background-image: conic-gradient(hsl(193, 23%, 63%) 0deg calc(360deg - var(--angle,50deg)),hsl(210, 100%, 100%) calc(360deg - var(--angle,50deg)) 360deg);
                         }
 
                         &::before{

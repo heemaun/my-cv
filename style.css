@@ -120,7 +120,7 @@ html body .container .left-div .items .item::after {
   inset: -7.5%;
   z-index: -2;
   border-radius: 50%;
-  background-image: conic-gradient(hsl(210, 100%, 100%) 0deg var(--angle, 50deg), hsl(193, 23%, 63%) var(--angle, 50deg) 360deg);
+  background-image: conic-gradient(hsl(193, 23%, 63%) 0deg calc(360deg - var(--angle, 50deg)), hsl(210, 100%, 100%) calc(360deg - var(--angle, 50deg)) 360deg);
 }
 html body .container .left-div .items .item::before {
   content: "";
